@@ -1,0 +1,245 @@
+\documentclass[12pt]{article}
+\usepackage[english,german]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{rotating}
+%\usepackage{pstricks}
+\usepackage{textpos}
+\usepackage{color}
+\usepackage{vmargin}
+\pagestyle{empty}
+\setpapersize{A4}
+\setmargnohfrb{15mm}{20mm}{25mm}{20mm} % l t r b
+\renewcommand{\familydefault}{\sfdefault}
+\newlength{\Indent}
+\setlength{\Indent}{30mm}
+\parindent=0.8em
+\parskip=0.25em
+\rightskip=0pt plus 3em
+\leftskip=\Indent
+\setcounter{secnumdepth}{-2}
+
+\makeatletter
+\newcommand{\English}{\selectlanguage{english}\slshape}
+\newcommand{\Deutsch}{\selectlanguage{german}\upshape}
+\renewcommand\section{\@startsection {section}{1}{-\Indent}%
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                   {2.3ex \@plus.2ex}%
+                                   {\sffamily\normalfont\Large}}
+\makeatother
+%\newcommand{\Section}[2]{%
+%  \section{\protect\parbox{\linewidth}{}}
+\newcommand{\Section}[2]{\section{%
+    \protect\parbox{\linewidth}{%
+    {\bfseries\Deutsch#1}
+   \\% \hskip1em%
+    {\English#2}}}}
+
+\begin{document}
+% \begin{sideways}
+% \begin{minipage}{\linewidth}
+%   \ttfamily%
+%   \LARGE%
+%   {
+%     %\Huge
+%     \fontsize{36}{42}\selectfont%
+%     the invisible image\\[0.66\baselineskip]
+%   }
+%   by \\
+%   Frank~Schimmel \& Christopher~Clay
+% \end{minipage}
+% \end{sideways}
+% \newpage
+%\vskip-2\baselineskip%
+\Section{Was sind Spacer GIFs?}{What are Spacer GIFs?}
+%\makebox[]{\rput{0}(0,0){test}}
+%\setlength{\TPHorizModule}{\textwidth}%
+%\setlength{\TPVertModule}{\textheight}%
+\definecolor{mygray}{rgb}{0.66,0.66,0.66}%
+\begin{textblock*}{0pt}(-\Indent,0\textheight)%
+  \begin{sideways}%
+    \Large\ttfamily%
+    \begin{minipage}{.9\textheight}
+    \textcolor{mygray}{%
+      {\Huge%
+        the invisible image}\\{}
+      [\kern-.125em[second interation, for network glimpse]\kern-.125em]\\{}
+    by Frank~Schimmel \& Christohper Clay}
+    \end{minipage}
+  \end{sideways}
+\end{textblock*}%
+
+\Deutsch%
+\emph{Spacer GIFs} -- auch \emph{Blind GIFs} genannt, obwohl es sich
+dabei auch um andere Grafikformate handeln kann -- sind ein
+Anachonismus auf den frühen Tagen des \emph{World Wide Web}: In den
+frühen bis Mitte der 1990er Jahre, also vor der Einführung von
+\emph{Cascading Style Sheets} (CSS), waren die Mittel zur optischen
+Gestaltung von \emph{Websites} weitaus eingeschränkter als heute.
+Insbesondere die genaue Positionierung der einzelnen Elemente einer
+Seite war nur bedingt möglich. Ein solches Mittel waren die
+\emph{Spacer GIFs}. Sie haben bei der Positionierung von
+Seitenelementen geholfen, indem sie Teile der Seite freigehalten
+haben, um so z.B.  zwischen Einträgen in Navigationsmenüs oder den
+Spalten eines mehrspaltigen Layouts einen angemessenen Abstand zu
+bewahren.
+
+Vom technischen Standpunkt aus betrachtet sind diese augenscheinlichen
+Lücken jedoch alles andere als leer, werden sie doch von Grafiken
+ausgefüllt, die lediglich unsichtbar sind. So lebt eine ganze Spezies
+von Bildern unbemerkt direkt vor den Augen nichtsahnender Besucher der
+betreffenden \emph{Websites}.
+
+Eine weitere bemerkenswerte Eigenschaft von \emph{Spacer GIFs} ist,
+daß sie einen \emph{Hack} im klassischen Sinn des Wortes darstellen:
+Sie sind ein Ge(Mis?)brauch (Schaffung von Leere auf einer Seite)
+eines Mittels (Einbettung von Grafiken in Textdokumenten), das für
+einen gänzlich anderen Zweck (Illustrationen und Abbildungen)
+erschaffen wurde.
+
+Und sie sind eine akut vom Aussterben bedrohte Spezies: Die heute zur
+Gestaltung von \emph{Websites} zur Verfügung stehenden Mittel sind
+ihnen bei weitem überlegen und sie können nur noch als überholt
+angesehen werden. Diese Installation ist diesen Bildern gewidmet, die
+sonst unbemerkt in ihren Verstecken hausen und bietet die seltene
+Gelegenheit, die Letzten ihrer Art zu bestaunen.
+
+
+\par\vskip0.8\baselineskip\noindent
+\English%
+Spacer GIFs---also called blind GIFs though they may as well be of
+other graphics formats---are an anachronism from the early days of the
+world wide web: back in the early to mid 1990s, before the advent of
+cascading style sheets (CSS), means for specifying the layout of a web
+site---especially ensuring the exact positioning of page
+elements---were quite limited. And one of them were spacer GIFs.
+Their purpose was to help position other elements of the page by
+keeping portions of that page empty, e.g. separating entries of a
+navigation menu or text columns in a multi-column layout.
+
+Technically, though, these apparently empty spaces are not empty at
+all. They are occupied by images which just happen to be invisible, a
+whole species unnoticed by unsuspecting visitors of the sites they
+dwell on.
+
+Another remarkable propertiy of spacer GIFs is that they constitute a
+Hack in the classical sense of the word: they are a very clever
+(ab?)use (generating empty space in a page) of a means (embedding
+images in a text document) invented for an entirely different purpose
+(providing illustrations and figures).
+
+They also are a species endangered by extinction: todays means of
+specifying page layout are vastly superior, thus, rendering spacer
+GIFs obsolete. This installation is dedicated to these normally unseen
+images, dragging them out of their niches and hideaways before they
+die out completely. So this may be your Last Chance (not) To See.
+
+
+\Section{Funktionsweise.}{How it works.}
+
+\Deutsch%
+Kern der Installation ist ein Programm, das die Google-Bildersuche
+benutzt, um das WWW nach \emph{Spacer}n abzusuchen. Genauer gesagt,
+wird nach Grafiken mit Namen gesucht, die mit relativ hoher
+Wahrscheinlichkeit \emph{Spacer GIFs} sind. Die gefundenen Grafiken
+werden heruntergeladen und auf Transparenz geprüft. Wenn die
+vollständig unsichtbar sind, werden sie dann dargestellt.
+
+Mit den Knöpfen können uneingeschränkte oder spezialisierte Suchen
+gestartet, zum nächsten Bild der aktuellen Suche gesprungen bzw. die
+schon früher gefundenen \emph{Spacer} revidiert werden.
+
+\par\vskip0.8\baselineskip\noindent%
+\English%
+At the core of the installation is a program that searches the web for
+spacers using Google Images. More precisely, it searches for images
+with names that likely will return many spacer GIFs. It then downloads
+the images and tests them for transparency. If it finds them to be
+entirely invisible, it will display them.
+
+By pressing the different buttons provided, you can execute an
+unrestricted or specialised search, force the next image of the
+current search or review spacers found so far.
+
+
+\Section{Was (nicht) zu sehen ist.}{What you see here. (Or don't.)}
+
+\Deutsch%
+Während das Programm nach weiteren Bildern sucht, zeigt es seinen
+Fortschritt dabei auf dem Monitor. Sobald ein \emph{Spacer GIF}
+gefunden wurde, werden dessen Metadaten wie die seine URL, Ausmaße in
+Pixeln, Größe in Bytes und dergleichen in der Projektion gezeigt.
+Danach wird das Bild selbst projeziert. Gleichzeitig wird die Struktur
+einer Seite, die das Bild referenziert schematisch auf dem Monitor
+dargestellt. Dabei werden die Seitenelemente als graue Blöcke
+gezeigt. Je tiefer diese in der Hierarchie verschachtelt sind, desto
+heller erscheinen sie. Das \emph{Spacer GIF} selbst erschein rot.
+
+\par\vskip0.8\baselineskip\noindent%
+\English%
+While it searches for more invisible images, the program shows its
+progress on the monitor. Once a spacer GIF has been found you are
+shown the images meta-data, i.e. its URL, dimensions in pixels, size in
+Bytes etc. in the projection. It then switches to display the image
+itself. In parallel, the layout structure of a page, which references
+the image, in is shown on the monitor. Page elements are only shown as
+gray blocks. The deeper nested the element, the brighter it is shown.
+The spacer GIF itself is appearing in red.
+
+
+
+
+\newpage
+{
+\Large%
+\setlength{\fboxsep}{3mm}%
+\newcommand{\Label}[2]{%
+\fbox{%
+  \Deutsch%
+  Uneingeschränkte Suche
+  \\
+  \English%
+  Unrestricted search
+}
+}
+
+\fbox{\parbox{6cm}{%
+  \Deutsch%
+  Uneingeschränkte Suche
+  \\
+  \English%
+  Unrestricted Search
+}}
+
+\vskip2\baselineskip
+
+\fbox{\parbox{5cm}{%
+  \Deutsch%
+  Spezialisierte Suchen
+  \\
+  \English%
+  Specialised Search
+}}
+
+\vskip2\baselineskip
+
+\fbox{\parbox{5cm}{%
+  \Deutsch%
+  Nächstes Bild
+  \\
+  \English%
+  Next Image
+}}
+
+\vskip2\baselineskip
+
+\fbox{\parbox{8cm}{%
+  \Deutsch%
+  Bekannte Bilder aus dem Cache
+  \\
+  \English%
+  Known Images From The Cache
+}
+}}
+
+
+\end{document}
